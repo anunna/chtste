@@ -1,0 +1,22 @@
+{
+  "name": "chtste",
+  "version": "1.0.0",
+  "description": "Modern chat room webapp",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anunna/chtste.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Alia Morozova",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/anunna/chtste/issues"
+  },
+  "homepage": "https://github.com/anunna/chtste#readme"
+}
