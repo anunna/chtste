@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBlink Clone</title>
+    <title>LuxeonChat</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to ChatBlink Clone</h1>
+        <h1>Welcome to LuxeonChat</h1>
         <form id="registerForm">
             <input type="text" id="username" placeholder="Username" required>
             <input type="text" id="displayName" placeholder="Display Name" required>
@@ -26,36 +26,118 @@
             <input type="number" id="weight" placeholder="Weight (kg)" required>
             <select id="bodyType" required>
                 <option value="">Select Body Type</option>
-                <!-- Add body type options -->
+                    <option value="Slender">Slender</option>
+                    <option value="Athletic">Athletic</option>
+                    <option value="Average">Average</option>
+                    <option value="Curvy">Curvy</option>
+                    <option value="Petite">Petite</option>
+                    <option value="Voluptuous">Voluptuous</option>
+                    <option value="Muscular">Muscular</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <select id="sexuality" required>
                 <option value="">Select Sexuality</option>
                 <option value="Straight">Straight</option>
                 <option value="Gay">Gay</option>
                 <option value="Bisexual">Bisexual</option>
+                <option value="Lesbian">Lesbian</option>
             </select>
             <select id="hairColor" required>
                 <option value="">Select Hair Color</option>
-                <!-- Add hair color options -->
+                    <option value="Black">Black</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Blonde">Blonde</option>
+                    <option value="Red">Red</option>
+                    <option value="Auburn">Auburn</option>
+                    <option value="Ginger">Ginger</option>
+                    <option value="Dark Brown">Dark Brown</option>
+                    <option value="Light Brown">Light Brown</option>
+                    <option value="Platinum Blonde">Platinum Blonde</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Turquoise">Turquoise</option>
+                    <option value="Lavender">Lavender</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Caramel">Caramel</option>
+                    <option value="Honey Blonde">Honey Blonde</option>
+                    <option value="Cinnamon">Cinnamon</option>
+                    <option value="Mahogany">Mahogany</option>
+                    <option value="Ash Blonde">Ash Blonde</option>
+                    <option value="Chestnut">Chestnut</option>
+                    <option value="Raven">Raven</option>
+                    <option value="Strawberry Blonde">Strawberry Blonde</option>
+                    <option value="Bald/Shaved">Bald/shaved</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <select id="hairTexture" required>
+                <option value="">Select Hair Texture</option>
+                    <option value="Straight">Straight</option>
+                    <option value="Wavy">Wavy</option>
+                    <option value="Curly">Curly</option>
+                    <option value="Kinky">Kinky</option>
+                    <option value="Coily">Coily</option>
             </select>
             <select id="hairStyle" required>
                 <option value="">Select Hair Style</option>
-                <!-- Add hair style options -->
+                    <option value="Bald/Shaved">Bald/Shaved</option>
+                    <option value="Pixie Cut">Pixie Cut</option>
+                    <option value="Bob">Bob</option>
+                    <option value="Ponytail">Ponytail</option>
+                    <option value="Braids">Braids</option>
+                    <option value="Dreadlocks">Dreadlocks</option>
+                    <option value="Afro">Afro</option>
+                    <option value="Mohawk">Mohawk</option>
+                    <option value="Undercut">Undercut</option>
+                    <option value="Layers">Layers</option>
+                    <option value="Bun">Bun</option>
+                    <option value="Pinned Back">Pinned Back</option>
+                    <option value="Shaggy">Shaggy</option>
+                    <option value="Messy">Messy</option>
+                    <option value="Spiky">Spiky</option>
+                    <option value="Asymmetrical">Asymmetrical</option>
+                    <option value="Bangs">Bangs</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <select id="eyeColor" required>
                 <option value="">Select Eye Color</option>
-                <!-- Add eye color options -->
+                    <option value="Blue">Blue</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Green">Green</option>
+                    <option value="Hazel">Hazel</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Amber">Amber</option>
+                    <option value="Violet">Violet</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <select id="ethnicity" required>
                 <option value="">Select Ethnicity</option>
-                <!-- Add ethnicity options -->
+                    <option value="African">African</option>
+                    <option value="Asian">Asian</option>
+                    <option value="Caucasian">Caucasian</option>
+                    <option value="Hispanic/Latino">Hispanic/Latino</option>
+                    <option value="Indegenous">Indegenous</option>
+                    <option value="Pacific Islander">Pacific Islander</option>
+                    <option value="Multitracial">Multitracial</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
             </select>
-            <input type="text" id="location" placeholder="City, Country" required>
+            <select id="country-select">
+                <option value="">Select a country</option>
+            </select>
             <textarea id="hobbies" placeholder="Hobbies" required></textarea>
             <button type="submit">Register</button>
         </form>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/countries.js"></script>
 </body>
 </html>
