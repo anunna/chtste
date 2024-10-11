@@ -142,7 +142,12 @@
                 <option value="">Select a country</option>
             </select>
             <textarea id="hobbies" placeholder="Hobbies" required></textarea>
-            <button type="submit">Register</button>
+            <div id="captcha-container" style="display: none;">
+                <label for="captcha">Please solve this CAPTCHA:</label>
+                <span id="captcha-question"></span>
+                <input type="number" id="captcha-answer" required>
+            </div>
+            <button type="submit" id="register-button">Register</button>
         </form>
     </div>
 

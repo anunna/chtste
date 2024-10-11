@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const ageSelect = document.getElementById('age');
     const heightSelect = document.getElementById('height');
     const weightSelect = document.getElementById('weight');
+    const registerButton = document.getElementById('register-button');
+    const captchaContainer = document.getElementById('captcha-question');
+    const captchaAnswer = document.getElementById('captcha-answer');
+
+    let correctCaptchaAnswer = 0;
 
     // Populate age dropdown
     for (let i = 13; i <= 100; i++) {
@@ -41,8 +46,33 @@ document.addEventListener('DOMContentLoaded', () => {
         weightSelect.appendChild(option);
     }
 
+   // Function to generate a random math question
+    function generateCaptcha() {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+        correctCaptchaAnswer = num1 + num2;
+        captchaQuestion.textContent = `${num1} + ${num2} = `;
+    }
+
+    // Show CAPTCHA when the register button is clicked
+    registerButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        captchaContainer.style.display = 'block';
+        generateCaptcha();
+    });
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        // Verify CAPTCHA
+        const userAnswer = parseInt(captchaAnswer.value, 10);
+        if (userAnswer !== correctCaptchaAnswer) {
+            alert('Incorrect CAPTCHA answer. Please try again.');
+            generateCaptcha();
+            captchaAnswer.value = '';
+            return;
+        }
+
         const formData = new FormData(form);
         const userData = Object.fromEntries(formData);
 
