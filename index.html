@@ -22,8 +22,14 @@
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
-            <input type="number" id="height" placeholder="Height (cm)" required>
-            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <select id="height" required>
+                <option value="">Select Height</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+            <select id="weight" required>
+                <option value="">Select Weight</option>
+                <!-- Options will be populated dynamically -->
+            </select>
             <select id="bodyType" required>
                 <option value="">Select Body Type</option>
                     <option value="Slender">Slender</option>
@@ -42,6 +48,7 @@
                 <option value="Gay">Gay</option>
                 <option value="Bisexual">Bisexual</option>
                 <option value="Lesbian">Lesbian</option>
+                <option value="Other">Other</option>
             </select>
             <select id="hairColor" required>
                 <option value="">Select Hair Color</option>
@@ -82,6 +89,8 @@
                     <option value="Curly">Curly</option>
                     <option value="Kinky">Kinky</option>
                     <option value="Coily">Coily</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <select id="hairStyle" required>
                 <option value="">Select Hair Style</option>
